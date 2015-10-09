@@ -1,5 +1,6 @@
 
 # Site settings
+<<<<<<< HEAD
 
 url: "http://archimedix.github.io"
 
@@ -134,3 +135,4 @@ sass:
 
 # Exclusion list from the generated _site
 exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+
