@@ -1,14 +1,136 @@
-# Site settings
-title: Archimedix
-email: io@archimedix.net
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: archimedix
-github_username:  archimedix
 
-# Build settings
-markdown: kramdown
+# Site settings
+
+url: "http://archimedix.github.io"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+
+# baseurl: /personal-jekyll-theme
+
+# google-tracking-id: "<YOUR GOOGLE TRACKING ID>"
+
+#############
+# HTML Head #
+#############
+
+author: "Archimedix"
+lang: "en"
+title: "{ Archimedix }"
+favicon: "/img/favicon.ico"
+description: "Archimedix profile page: Piergiorgio Borgogno"
+keywords: "archimedix, borgogno"
+
+################
+# Intro layout #
+################
+
+black-favicon: "/img/archilogo.png"
+background-img: "../img/thailand.jpg"
+me-img: "/img/me-icon.png"
+
+##############################
+# Dynamic Text on the header #
+##############################
+
+dynamic-typing: True
+shuffle: True	# Shuffle the lines.
+loop: True
+loop-count:	False # Set False for infinite loop, or set any number for finite loop.
+type-speed:	10		# Default 10
+start-delay: 200	# Default 200
+delete-delay: 5000	# Default 5000
+lines:			# You can add HTML Tags in the Text
+  - text: "Creativity is intelligence having fun."
+  - text: "Life is what happens while you are busy making other plans."
+
+########
+# Blog #
+########
+
+post-preview-words: 128
+
+paginate: 5
+
+fb-share: True
+twitter-share: True
+reddit-share: True
+
+###############
+# Life Events #
+###############
+
+events:
+  - image: "/img/basic.png"
+    date: "1980 - Starting coding"
+    description: "Make my text-based soccer game with GW-Basic on Philips MSX Computer"
+  - image: "/img/autocad.png"
+    date: "1991 - 1995 Working with AutoCad 12 on MS-DOS"
+    description: "and CAD-CAM software"
+  - image: "/img/winnt40.png"
+    date: "1995 - 2000 LAN Manager"
+    description: "Workin as sysadmin in schools"
+  - image: "/img/Tux_icon.svg"
+    date: "2000 - 2006 LAMP"
+    description: "Developing web educational app for e-learning"
+  - image: "/img/archi-in-biblioteca.jpg"
+    date: "2007 A second life"
+    description: "Great experience in virtual worlds"
+  - image: "/img/mlearning.png"
+    date: "2008 - Today Mobile learning"
+    description: "Working with mobile device in teaching"
+  - image: "/img/apps.png"
+    date: "2014 - Today"
+    description: "Freelance and teacher on MEAN and hibrid Apps"
+
+# First image of the Career timeline
+career-img: "/img/me-icon.png"
+
+##################
+# Contact layout #
+##################
+
+email: "io@archimedix.net"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "facebook"
+    url: "http://it-it.facebook.com/archimedix"
+  - title: "twitter"
+    url: "http://twitter.com/archimedix"
+  - title: "github"
+    url: "https://archimedix.github.com/"
+
+############
+# 404 page #
+############
+
+404-img: "/img/labtocat.png"
+
+################################################################################
+
+# Tread carefully if you want to change the variables below this point!
+
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
+
+pages_list:
+  About: 'about'
+  Bio: 'bio'
+  Contact: 'contact'
+
+# Pagination path
+paginate_path: "blog/page:num"
+
+# Enable minification SASS
+sass:
+  style: compressed
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
